@@ -149,7 +149,7 @@ def on_button3_click(nm):
         cursor.execute("SELECT * FROM contacts WHERE name LIKE ?",(nm,))
         contacts = cursor.fetchall()
         for row in contacts:
-            listbox.insert(tk.END, "建議配備: ")
+            listbox.insert(tk.END, "最低配備: ")
             listbox.insert(tk.END, "作業系統: " + row[1])
             listbox.insert(tk.END, "處理器: " + row[2])
             listbox.insert(tk.END, "記憶體: " + row[3])
@@ -157,7 +157,7 @@ def on_button3_click(nm):
             listbox.insert(tk.END, "DirectX: " + row[5])
             listbox.insert(tk.END, "儲存空間: " + row[6])
             listbox.insert(tk.END, "")
-            listbox.insert(tk.END, "最低配備: ")
+            listbox.insert(tk.END, "建議配備: ")
             listbox.insert(tk.END, "作業系統: " + row[7])
             listbox.insert(tk.END, "處理器: " + row[8])
             listbox.insert(tk.END, "記憶體: " + row[9])
